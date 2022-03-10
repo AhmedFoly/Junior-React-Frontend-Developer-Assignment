@@ -1,0 +1,12 @@
+:root {
+  --mainGreen: #5ECE7B;  
+  --mainDark: #1D1F22;
+  --mainFont: 'Raleway', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
+}

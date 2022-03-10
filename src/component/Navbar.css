@@ -1,0 +1,121 @@
+.header {
+  min-height: 75px;
+  width: 80%;
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.header-links ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-links ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.header-links ul li a.active {
+  color: var(--mainGreen);
+  position: relative;
+}
+
+.header-links ul li a.active::before {
+  content: "";
+  position: absolute;
+  width: 69%;
+  height: 3px;
+  background-color: var(--mainGreen);
+  bottom: -10px;
+  left: 15%;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropbtn {
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dropbtn::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #000;
+  right: 0;
+  top: 19px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 90px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px !important;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.cart {
+  display: block;
+  line-height: 50%;
+  position: relative;
+}
+.cart-length:empty{
+  display: none;
+}
+.cart-length {
+  position: absolute;
+  background-color: black;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  top: -14px;
+  right: 1px;
+}
